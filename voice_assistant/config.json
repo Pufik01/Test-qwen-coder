@@ -1,0 +1,61 @@
+{
+  "wake_word": "привет работа",
+  "greeting": "доброе утро сэр",
+  "macros": {
+    "работа": {
+      "response": "включаю режим работы",
+      "actions": [
+        {
+          "type": "speak",
+          "text": "запускаю рабочие приложения"
+        },
+        {
+          "type": "open_app",
+          "app": "notepad"
+        },
+        {
+          "type": "music",
+          "action": "play"
+        }
+      ]
+    },
+    "отдых": {
+      "response": "включаю режим отдыха",
+      "actions": [
+        {
+          "type": "speak",
+          "text": "приятного отдыха"
+        },
+        {
+          "type": "music",
+          "action": "pause"
+        }
+      ]
+    },
+    "время": {
+      "response": "",
+      "actions": [
+        {
+          "type": "speak",
+          "text": "текущее время"
+        },
+        {
+          "type": "time"
+        }
+      ]
+    },
+    "дата": {
+      "response": "",
+      "actions": [
+        {
+          "type": "date"
+        }
+      ]
+    }
+  },
+  "autostart": true,
+  "voice": {
+    "rate": 150,
+    "volume": 0.9
+  }
+}
